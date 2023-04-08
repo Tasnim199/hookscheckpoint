@@ -7,8 +7,30 @@ export default function Searchbar({setByname,setByrate}) {
         <div className='search-input'> 
         <img src='https://tse4.mm.bing.net/th?id=OIP.1xYXwLGnm1lyOK0gheG35AHaHa&pid=Api&P=0' alt='loupe'/>
             <input type="text" placeholder='Type movie name ' onChange={(e) => setByname(e.target.value)}/>
+
             </div>
+   <div>
+    <ul>
+      <link to="/ ">
+      <li>
+        Home
+      </li>
+      </link>
    
+      <link to="/ Movies " >
+      <li>
+       Movies
+      </li>
+      </link>
+      <link to="/Series " >
+      <li>
+      Series
+      </li>
+      </link>
+    </ul>
+   </div>
+    
+  
     <ReactStars
   count={5}
   onChange={(newValue)=>setByrate (newValue)}
